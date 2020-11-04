@@ -1,5 +1,5 @@
 <template>
-<div id="demo">{{ fullName }}</div>
+<div id="demo">{{ fullName }} {{ firstName }}</div>
 </template>
 
 <script>
@@ -8,7 +8,7 @@ export default {
     return {
       firstName: 'Foo',
       lastName: 'Bar',
-      fullName: 'Foo Bar'
+      fullName: 'aaa'
     }
   },
   watch: {

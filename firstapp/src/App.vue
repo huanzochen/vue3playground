@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
     <BadWatch />
+  <BindClass />
   <HelloWorld msg="Hello Vue 3.0 + Vite" />
   <Compute msg="I added a new component" />
   <ComputeWithCompute msg="A component using compute" />
@@ -15,6 +16,7 @@ import ComputeWithCompute from './components/ComputeWithCompute.vue'
 import ComputeWithMethod from './components/ComputeWithMethod.vue'
 import Watch from './components/Watch.vue'
 import BadWatch from './components/BadWatch.vue'
+import BindClass from './components/BindClass.vue'
 
 export default {
   name: 'App',
@@ -24,7 +26,8 @@ export default {
     ComputeWithCompute,
     ComputeWithMethod,
     Watch,
-    BadWatch
+    BadWatch,
+    BindClass
   }
 }
 </script>
