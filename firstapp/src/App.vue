@@ -7,6 +7,8 @@
   <ComputeWithCompute msg="A component using compute" />
   <ComputeWithMethod msg="using component with method" />
   <Watch test="this is a watch component" />
+  <TestButton oauthbutton="testbutton" />
+  <GoogleOAuth oauthbutton="this is GoogleAuthComponent" />
 </template>
 
 <script>
@@ -17,6 +19,8 @@ import ComputeWithMethod from './components/ComputeWithMethod.vue'
 import Watch from './components/Watch.vue'
 import BadWatch from './components/BadWatch.vue'
 import BindClass from './components/BindClass.vue'
+import TestButton from './components/TestButton.vue'
+import GoogleOAuth from './components/OAuth/GoogleOAuth.vue'
 
 export default {
   name: 'App',
@@ -27,7 +31,9 @@ export default {
     ComputeWithMethod,
     Watch,
     BadWatch,
-    BindClass
+    BindClass,
+    TestButton,
+    GoogleOAuth
   }
 }
 </script>
