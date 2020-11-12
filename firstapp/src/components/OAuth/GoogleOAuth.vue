@@ -5,6 +5,8 @@
      <button @click="google">GoogleOAuth</button>
     </p>
     <p>{{ answer }}</p>
+    <h3> envTest: </h3>
+    <p>{{ envTest }}</p>
   </div>
 </template>
 
@@ -18,21 +20,23 @@ export default {
   },
   data() {
     return {
-      answer: 'Google OAuth Test'
+      answer: 'Google OAuth Test',
+      envTest: import.meta.env.VITE_CLIENT_ID
     }
   },
   watch: {
   },
   methods: {
     google() {
-      console.log('hi')
-      axios
-        // .get('https://tw.rter.info/capi.php')
-        .get('http://localhost:7001/test')
-        .then(response => {
-          console.log(response)
-        })
-      
+      // window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?
+      // client_id=${import.meta.env.VITE_CLIENT_ID}&
+      // redirect_uri=${import.meta.env.VITE_EGG_VUE3_PLAYGROUND}/oauth/google/callback
+      // response_type=${}
+      // scopes
+      // `
+      // // this.$router.push({
+      // //   path: 'https://accounts.google.com/o/oauth2/v2/auth'
+      // // })
     }
   }
 }

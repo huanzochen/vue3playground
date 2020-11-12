@@ -9,6 +9,10 @@
   <Watch test="this is a watch component" />
   <TestButton oauthbutton="testbutton" />
   <GoogleOAuth oauthbutton="this is GoogleAuthComponent" />
+  <router-link to="/">Go to Home</router-link>
+  <router-link to="/about">Go to About</router-link>
+  <a href="https://www.google.com.tw">go to google</a>
+  <router-view></router-view>
 </template>
 
 <script>
@@ -36,4 +40,6 @@ export default {
     GoogleOAuth
   }
 }
+
+
 </script>
