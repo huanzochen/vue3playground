@@ -28,15 +28,16 @@ export default {
   },
   methods: {
     google() {
-      // window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?
-      // client_id=${import.meta.env.VITE_CLIENT_ID}&
-      // redirect_uri=${import.meta.env.VITE_EGG_VUE3_PLAYGROUND}/oauth/google/callback
-      // response_type=${}
-      // scopes
-      // `
-      // // this.$router.push({
-      // //   path: 'https://accounts.google.com/o/oauth2/v2/auth'
-      // // })
+      window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?
+client_id=${import.meta.env.VITE_CLIENT_ID}&
+redirect_uri=${import.meta.env.VITE_EGG_VUE3_PLAYGROUND}/oauth/google/callback&
+response_type=code&
+scope=https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile
+`
+// scope=https://www.googleapis.com/auth/userinfo.email,https://www.googleapis.com/auth/userinfo.profile
+      // this.$router.push({
+      //   path: 'https://accounts.google.com/o/oauth2/v2/auth'
+      // })
     }
   }
 }
